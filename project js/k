@@ -1,0 +1,49 @@
+// plus and minus
+// let plus= document.getElementById("plus")
+// let count = document.getElementById("count")
+// let minus= document.getElementById("minus")
+// plus.onclick=()=>{
+//     if(count.innerText>=1){
+//         count.innerText++
+//     }
+// }
+
+// minus.onclick=()=>{
+//     if(count.innerText>1){
+//         count.innerText--
+//     }
+// }
+
+// Select all cards
+// const cards = document.querySelectorAll('.card1, .card2');
+
+// cards.forEach(card => {
+//   // Get the price span element
+//   const priceSpan = card.querySelector('span');
+//   // Extract the base price number (assumes format: "Price : 40₹")
+//   const basePrice = parseInt(priceSpan.textContent.match(/\d+/)[0]);
+
+//   // Quantity span
+//   const qtySpan = card.querySelector('.incs_and_decs span');
+
+//   // Buttons
+//   const [minusBtn, plusBtn] = card.querySelectorAll('.incs_and_decs button');
+
+//   plusBtn.addEventListener('click', () => {
+//     let qty = parseInt(qtySpan.textContent);
+//     qty++;
+//     qtySpan.textContent = qty;
+//     priceSpan.textContent = `Price : ${basePrice * qty}₹`;
+//   });
+
+//   minusBtn.addEventListener('click', () => {
+//     let qty = parseInt(qtySpan.textContent);
+//     if(qty > 1){
+//       qty--;
+//       qtySpan.textContent = qty;
+//       priceSpan.textContent = `Price : ${basePrice * qty}₹`;
+//     }
+//   });
+// });
+
+// // cart

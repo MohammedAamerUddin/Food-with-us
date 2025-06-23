@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(192, 190, 190, 0.312);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* nav bar starts */
+.sec1 {
+    height: 50px;
+    background-color: white;
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.527);
+}
+
+.nav {
+    height: 48px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right {
+    list-style: none;
+    height: 45px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right li:hover {
+    cursor: pointer;
+}
+
+.nav-left {
+    height: 45px;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+.nav-left>img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    /* background-color: rgb(255, 60, 60); */
+}
+
+#sign-in-btn,
+#sign-up-btn {
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#sign-in-btn {
+    background-color: white;
+    border: 1px solid black;
+}
+
+#sign-up-btn {
+    background-color: rgb(246, 22, 22);
+    color: white;
+    border: 1px solid rgb(246, 22, 22);
+}
+
+/* Sign Up Form */
+.signup {
+    height: 550px;
+    width: 50%;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.up {
+    height: 520px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.up > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.up > form input {
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.up > form input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+.up > form button {
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 60, 60);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sign In Form */
+.signin {
+    height: 550px;
+    width: 50%;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.in {
+    height: 520px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.in > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.in > form input {
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.in > form input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+.in > form button {
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 60, 60);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Utility Classes */
+.form-title {
+    font-family: cursive;
+    text-align: center;
+}
+
+.divider {
+    font-size: 15px;
+    text-align: center;
+}
+
+.google-auth {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* cards */
+/* sec2 */
+.sec2 {
+    /* border: 2px solid black; */
+    height: 557px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cards {
+    /* border: 2px solid red; */
+    height: 530px;
+    /* width: 68%; */
+    width:98%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-card,
+.bottom-card {
+    /* border: 2px solid rgb(94, 255, 0);   */
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.card1,
+.card2 {
+    /* border: 1px solid rgba(0, 0, 0, 0.679); */
+    /* border-radius: 3px; */
+    height: 220px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.213);
+    /* background-color: white; */
+}
+
+.card1:hover,
+.card2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.card1 > img,
+.card2 > img {
+    /* border: 2px solid gold; */
+    width: 200px;
+    height: 100px;
+}
+
+.card1 > :last-child,
+.card2 > :last-child {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(255, 60, 60);
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* cart */
+.cart{
+    border: 2px solid rgb(255, 60, 60);
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.641);
+    height: 530px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    justify-content: space-around;
+    display: none;
+}
+.cart> h1 img {
+    width: 30px;
+    height: 27px;
+}
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart table th,
+.cart table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 17px;
+}
+.cart>form{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ gap: 10px;
+}
+.cart form label{
+    font-size: 17px;
+    font-weight: 500;
+}
+.cart form input{
+    padding: 10px ;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+
+.cart form button {
+    padding: 8px;
+    background-color: rgb(255, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btn1>button{
+    padding: 8px;
+    background-color: rgb(255, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 35px;
+    width: 40%;  
+}
+.items{
+    border: 2px solid rgb(255, 60, 60);
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.641);
+    height: 400px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    /* justify-content: space-evenly; */
+    display: none;
+}
+.items>img{
+    border: 2px solid red;
+    height: 300px;
+}
+.items>p{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid ; */
+    height: 30px;
+}
+.items>button{
+    padding: 8px;
+    background-color: rgb(255, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
